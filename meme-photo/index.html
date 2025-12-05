@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meme Photo - Chrome Extension</title>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 40px 20px;
+            line-height: 1.7;
+            color: #333;
+            background-color: #fffdf6;
+            text-align: center;
+        }
+        h1 {
+            color: #469238;
+            font-size: 2.5em;
+            margin-bottom: 16px;
+        }
+        .tagline {
+            color: #666;
+            font-size: 1.2em;
+            margin-bottom: 40px;
+        }
+        .links {
+            display: flex;
+            justify-content: center;
+            gap: 24px;
+            flex-wrap: wrap;
+            margin-top: 32px;
+        }
+        .links a {
+            display: inline-block;
+            padding: 12px 24px;
+            background-color: #469238;
+            color: white;
+            text-decoration: none;
+            border-radius: 8px;
+            font-weight: 500;
+            transition: background-color 0.2s;
+        }
+        .links a:hover {
+            background-color: #3a7a2e;
+        }
+        .links a.secondary {
+            background-color: transparent;
+            color: #469238;
+            border: 2px solid #469238;
+        }
+        .links a.secondary:hover {
+            background-color: #f4f0db;
+        }
+        footer {
+            margin-top: 60px;
+            color: #666;
+            font-size: 14px;
+        }
+    </style>
+</head>
+<body>
+    <h1>🖼️ Meme Photo</h1>
+    <p class="tagline">Upload images to Google Photos with a single right-click</p>
+    
+    <div class="links">
+        <a href="https://github.com/hank00111/meme-photo" target="_blank" rel="noopener">
+            GitHub Repository
+        </a>
+        <a href="privacy-policy.html" class="secondary">
+            Privacy Policy
+        </a>
+    </div>
+
+    <footer>
+        <p>&copy; 2025 Meme Photo. Open source under MIT License.</p>
+    </footer>
+</body>
+</html>

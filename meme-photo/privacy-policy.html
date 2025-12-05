@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Privacy Policy - Meme Photo</title>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 40px 20px;
+            line-height: 1.7;
+            color: #333;
+            background-color: #fffdf6;
+        }
+        h1 {
+            color: #469238;
+            border-bottom: 3px solid #469238;
+            padding-bottom: 12px;
+            margin-bottom: 8px;
+        }
+        .last-updated {
+            color: #666;
+            font-size: 14px;
+            margin-bottom: 32px;
+        }
+        h2 {
+            color: #2d5a27;
+            margin-top: 32px;
+            padding-bottom: 8px;
+            border-bottom: 1px solid #e0e0e0;
+        }
+        h3 {
+            color: #469238;
+            margin-top: 24px;
+        }
+        ul {
+            padding-left: 24px;
+        }
+        li {
+            margin-bottom: 8px;
+        }
+        strong {
+            color: #2d5a27;
+        }
+        a {
+            color: #469238;
+            text-decoration: none;
+        }
+        a:hover {
+            text-decoration: underline;
+        }
+        .highlight-box {
+            background-color: #f4f0db;
+            border-left: 4px solid #469238;
+            padding: 16px 20px;
+            margin: 20px 0;
+            border-radius: 0 8px 8px 0;
+        }
+        .highlight-box p {
+            margin: 0;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 16px 0;
+        }
+        th, td {
+            text-align: left;
+            padding: 12px;
+            border: 1px solid #e0e0e0;
+        }
+        th {
+            background-color: #f4f0db;
+            color: #2d5a27;
+        }
+        footer {
+            margin-top: 48px;
+            padding-top: 24px;
+            border-top: 1px solid #e0e0e0;
+            color: #666;
+            font-size: 14px;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <h1>Privacy Policy for Meme Photo</h1>
+    <p class="last-updated"><strong>Last Updated:</strong> December 5, 2025</p>
+
+    <h2>1. Introduction</h2>
+    <p>
+        Meme Photo ("we", "our", or "the extension") is a Chrome browser extension that enables users 
+        to upload images from web pages directly to their Google Photos account via the right-click 
+        context menu. This privacy policy explains how we collect, use, and protect your information.
+    </p>
+
+    <div class="highlight-box">
+        <p><strong>Key Point:</strong> All your data is stored locally on your device. 
+        We do NOT collect, transmit, or store any data on external servers.</p>
+    </div>
+
+    <h2>2. Information We Collect</h2>
+    
+    <h3>2.1 Google Account Information</h3>
+    <p>When you authorize the extension, we access the following information via Google OAuth:</p>
+    <ul>
+        <li><strong>Profile Name:</strong> Your Google account display name</li>
+        <li><strong>Profile Photo URL:</strong> Your Google account profile picture</li>
+    </ul>
+    <p>This information is used solely to display your account in the extension's user interface.</p>
+
+    <h3>2.2 Upload History</h3>
+    <p>When you upload an image to Google Photos, we store the following locally:</p>
+    <table>
+        <tr>
+            <th>Data</th>
+            <th>Purpose</th>
+        </tr>
+        <tr>
+            <td>Timestamp</td>
+            <td>Display upload time in history</td>
+        </tr>
+        <tr>
+            <td>Filename</td>
+            <td>Identify uploaded images</td>
+        </tr>
+        <tr>
+            <td>Media Item ID</td>
+            <td>Fetch thumbnails from Google Photos</td>
+        </tr>
+        <tr>
+            <td>Product URL</td>
+            <td>Link to view image in Google Photos</td>
+        </tr>
+        <tr>
+            <td>Album ID (optional)</td>
+            <td>Track which album the image was uploaded to</td>
+        </tr>
+    </table>
+
+    <h3>2.3 Cached Data</h3>
+    <ul>
+        <li><strong>Album Names:</strong> Cached for 7 days to reduce API calls</li>
+        <li><strong>Thumbnails:</strong> Cached locally as Base64 for faster loading</li>
+        <li><strong>Selected Album:</strong> Your preferred upload destination</li>
+    </ul>
+
+    <h2>3. How We Use Your Information</h2>
+    <ul>
+        <li><strong>Authentication:</strong> To verify your identity and access Google Photos on your behalf</li>
+        <li><strong>Image Upload:</strong> To upload images you select to your Google Photos account</li>
+        <li><strong>Display History:</strong> To show your recent uploads within the extension</li>
+        <li><strong>User Interface:</strong> To personalize the extension with your profile information</li>
+    </ul>
+
+    <h2>4. Data Storage</h2>
+    
+    <div class="highlight-box">
+        <p><strong>Local Storage Only:</strong> All data is stored using Chrome's local storage API 
+        (<code>chrome.storage.local</code>) on your device. Maximum storage is 10 MB.</p>
+    </div>
+
+    <p>We do NOT:</p>
+    <ul>
+        <li>Store any data on external servers</li>
+        <li>Transmit your data to third parties</li>
+        <li>Use analytics or tracking services</li>
+        <li>Collect browsing history or personal information beyond what is listed above</li>
+    </ul>
+
+    <h2>5. Third-Party Services</h2>
+    <p>The extension interacts with the following Google APIs:</p>
+    <table>
+        <tr>
+            <th>API</th>
+            <th>Purpose</th>
+            <th>Scope</th>
+        </tr>
+        <tr>
+            <td>Google Photos Library API</td>
+            <td>Upload images and read app-created content</td>
+            <td>photoslibrary.appendonly, photoslibrary.readonly.appcreateddata</td>
+        </tr>
+        <tr>
+            <td>Google UserInfo API</td>
+            <td>Get your name and profile photo</td>
+            <td>userinfo.profile</td>
+        </tr>
+    </table>
+    <p>
+        Your data is sent directly to Google's servers following their 
+        <a href="https://policies.google.com/privacy" target="_blank" rel="noopener">Privacy Policy</a>. 
+        We do not have access to your Google account password.
+    </p>
+
+    <h2>6. Permissions Explained</h2>
+    <table>
+        <tr>
+            <th>Permission</th>
+            <th>Why We Need It</th>
+        </tr>
+        <tr>
+            <td>identity</td>
+            <td>To authenticate with your Google account via OAuth</td>
+        </tr>
+        <tr>
+            <td>storage</td>
+            <td>To store upload history and preferences locally</td>
+        </tr>
+        <tr>
+            <td>contextMenus</td>
+            <td>To add "Upload to Google Photos" option when right-clicking images</td>
+        </tr>
+        <tr>
+            <td>scripting</td>
+            <td>To show upload notifications (Toast messages) on web pages</td>
+        </tr>
+        <tr>
+            <td>host_permissions (all URLs)</td>
+            <td>To download images from any website you choose to upload</td>
+        </tr>
+    </table>
+
+    <h2>7. Data Retention</h2>
+    <ul>
+        <li><strong>Upload History:</strong> Kept until you delete it manually (maximum 50 records)</li>
+        <li><strong>Album Cache:</strong> Automatically expires after 7 days</li>
+        <li><strong>User Profile:</strong> Cleared when you log out</li>
+        <li><strong>Thumbnail Cache:</strong> Cleared when you log out</li>
+    </ul>
+
+    <h2>8. Your Rights</h2>
+    <p>You have the right to:</p>
+    <ul>
+        <li><strong>View:</strong> See all stored data in the extension popup</li>
+        <li><strong>Delete:</strong> Remove individual upload records or clear all history</li>
+        <li><strong>Revoke Access:</strong> Log out from the extension to clear all cached data</li>
+        <li><strong>Uninstall:</strong> Removing the extension deletes all locally stored data</li>
+    </ul>
+
+    <h2>9. Security</h2>
+    <ul>
+        <li>OAuth 2.0 is used for secure authentication with Google</li>
+        <li>We never see or store your Google password</li>
+        <li>All communication with Google APIs uses HTTPS encryption</li>
+        <li>Access tokens are managed by Chrome's identity API</li>
+    </ul>
+
+    <h2>10. Children's Privacy</h2>
+    <p>
+        This extension is not intended for use by children under 13 years of age. 
+        We do not knowingly collect personal information from children.
+    </p>
+
+    <h2>11. Changes to This Policy</h2>
+    <p>
+        We may update this privacy policy from time to time. Any changes will be reflected 
+        in the "Last Updated" date at the top of this page. Continued use of the extension 
+        after changes constitutes acceptance of the updated policy.
+    </p>
+
+    <h2>12. Contact Us</h2>
+    <p>
+        If you have any questions about this privacy policy or the extension's data practices, 
+        please open an issue on our GitHub repository:
+    </p>
+    <p>
+        <a href="https://github.com/hank00111/meme-photo/issues" target="_blank" rel="noopener">
+            https://github.com/hank00111/meme-photo/issues
+        </a>
+    </p>
+
+    <footer>
+        <p>&copy; 2025 Meme Photo. All rights reserved.</p>
+        <p>
+            <a href="https://github.com/hank00111/meme-photo">GitHub</a> | 
+            <a href="https://chrome.google.com/webstore">Chrome Web Store</a>
+        </p>
+    </footer>
+</body>
+</html>
