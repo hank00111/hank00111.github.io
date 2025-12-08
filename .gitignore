@@ -1,0 +1,5 @@
+# Style documentation (local only)
+docs/
+
+# Playwright MCP temporary files
+.playwright-mcp/
