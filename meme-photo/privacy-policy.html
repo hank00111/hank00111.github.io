@@ -17,6 +17,32 @@
             color: #282d27;
             background-color: #fcf7e1;
         }
+        /* Navbar Styles */
+        .navbar {
+            display: flex;
+            justify-content: center;
+            gap: 32px;
+            padding: 16px 0;
+            margin-bottom: 32px;
+            border-bottom: 1px solid rgba(40,45,39,.2);
+        }
+        .navbar a {
+            color: #282d27;
+            text-decoration: none;
+            font-weight: 500;
+            padding: 8px 16px;
+            border-radius: 6px;
+            transition: all 0.2s;
+        }
+        .navbar a:hover {
+            color: #5a9f4d;
+            background-color: rgba(40,45,39,.05);
+        }
+        .navbar a.active {
+            color: #5a9f4d;
+            border-bottom: 2px solid #5a9f4d;
+            border-radius: 6px 6px 0 0;
+        }
         h1 {
             color: #5a9f4d;
             border-bottom: 3px solid #5a9f4d;
@@ -89,6 +115,12 @@
     </style>
 </head>
 <body>
+    <nav class="navbar">
+        <a href="./">Home</a>
+        <a href="privacy-policy.html" class="active">Privacy Policy</a>
+        <a href="terms.html">Terms of Service</a>
+    </nav>
+
     <h1>Privacy Policy for Meme Photo</h1>
     <p class="last-updated"><strong>Last Updated:</strong> December 5, 2025</p>
 
